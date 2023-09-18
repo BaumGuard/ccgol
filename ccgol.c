@@ -232,8 +232,10 @@ int main (int argc, char** argv) {
                 }
 
                 // Exiting if both fields are equal, otherwise saving the current field in cmp_arr
-                if (equal == true)
+                if (equal == true) {
+                    printf("Detected final/alternating configuration. Exiting...\n\n");
                     break;
+                }
                 else {
                     for (int a=0; a<HEIGHT; a++) {
                         for (int b=0; b<WIDTH; b++) {
