@@ -1,8 +1,8 @@
-output: ccgol.o
-	gcc ccgol.o -o ccgol
+output: src/ccgol.o
+	gcc src/ccgol.o -o src/ccgol
 
-ccgol.o: ccgol.c console_size.h import_field.h show_help.h
-	gcc -c ccgol.c
+ccgol.o: src/ccgol.c src/console_size.h src/import_field.h src/show_help.h
+	gcc -c src/ccgol.c
 
 clean:
-	rm *.o ccgol
+	rm src/*.o src/ccgol
