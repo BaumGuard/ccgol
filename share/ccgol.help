@@ -1,0 +1,34 @@
+ccgol - Help dialog
+
+ccgol is a program that draws Conway's Game of Life in the console
+
+Options:
+    -w:    Width in characters
+    -h:    Height in characters
+    -i:    Update interval in milliseconds
+    -r:	   Number of runs (stops at final/alternating configuration)
+    -inf:  Run infinitely long (No checking for final/alternating configuration)
+    -f:    Field file
+    -x:    Horizontal offset from left (for field file)
+    -y:    Vertical offset from top (for field file)
+    -init: Only show initial configuration
+
+
+Field file
+The field is represented as a set of 0 and 1:
+    - 0: alive
+    - 1: dead
+
+All lines must be of equal length:
+
+Example:
+0000000000000000000000000000000000000
+0000000000000000000000000100000000000
+0000000000000000000000010100000000000
+0000000000000110000001100000000000011
+0000000000001000100001100000000000011
+0110000000010000010001100000000000000
+0110000000010001011000010100000000000
+0000000000010000010000000100000000000
+0000000000001000100000000000000000000
+0000000000000110000000000000000000000
