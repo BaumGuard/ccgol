@@ -11,7 +11,7 @@ Conway's Game of Life in the console
 - Variable speed
 - Automatically stops when it recognizes a final or alternating field configuration
 
-# Compilation
+# Installation
 Clone **ccgol**:
 ```
 git clone https://github.com/BaumGuard/ccgol
@@ -23,6 +23,11 @@ cd ccgol
 Compile:
 ```
 make
+```
+Install:
+```
+chmod +x install.sh
+sudo ./install.sh
 ```
 
 # Usage
@@ -66,3 +71,14 @@ In the file the field is represented as a set of lines of 0s and 1s where...
 - `1` is an **alive cell**
 
 **All the lines must be of equal length! Otherways the execution might fail!**
+
+# Uninstall
+Enter the directory of **ccgol**:
+```
+cd ccgol
+```
+Uninstall:
+```
+chmod +x uninstall.sh
+sudo ./uninstall.sh
+```
